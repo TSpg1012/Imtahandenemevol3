@@ -1,0 +1,59 @@
+.menu {
+  display: flex;
+  padding: 50px 0;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
+  gap: 24px;
+  p {
+    font-size: 34px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+
+    button {
+      padding: 18px 24px;
+      font-weight: bold;
+      background-color: white;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      border: none;
+    }
+
+    button:hover {
+      background: orange;
+      transition: all 0.3s ease;
+    }
+  }
+
+  .products {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    .product {
+      padding: 12px;
+      background-color: white;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      div {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        p {
+          font-size: 16px;
+          color: black;
+        }
+      }
+      p {
+        text-align: right;
+        font-size: 16px;
+        color: rgba(165, 80, 80, 0.507);
+      }
+    }
+  }
+}

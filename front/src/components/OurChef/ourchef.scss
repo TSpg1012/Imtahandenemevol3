@@ -1,0 +1,39 @@
+.ourChef {
+  display: flex;
+  justify-content: center;
+
+  .parts {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .image {
+      height: 100%;
+      width: 100%;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      justify-content: center;
+      padding: 100px;
+
+      .about {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        p:nth-child(1) {
+          color: gray;
+        }
+        p:nth-child(2) {
+          font-size: 24px;
+        }
+      }
+      .text {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+    }
+  }
+}
